@@ -1,0 +1,548 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+    color: black;
+}
+
+#menu-toggle {
+    display: none;
+    font-size: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: black;
+}
+
+#cabecalho{
+    display: flex;
+    background-color: white;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding: 10px 5%; 
+    position: fixed;
+}
+
+.cabecalho-textos ul{ 
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+}
+
+.cabecalho-textos li{
+    padding-right: 30px;
+}
+
+.cabecalho-textos a{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 24px;
+    color: black;
+    transition-duration: 0.5s;
+    white-space: nowrap;
+    font-weight: 600;
+    transition: transform 1s ease; 
+}
+
+.cabecalho-textos a:hover{
+    transform: scale(1.1); 
+}
+
+.cabecalho-img img {
+    max-width: 200px; 
+    width: auto;
+    height: auto;
+}
+
+.cabecalho-img {
+    transition: transform 1s ease; 
+    display: inline-block;
+}
+
+.cabecalho-img:hover{
+    transform: scale(1.1); 
+}
+
+
+#principal{
+    padding-top: 100px;
+}
+
+
+
+.apresentacao{
+    background-image: url(images/Image-Background-Apresentação.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.apresentacao h1{
+    padding-bottom: 150px;
+    color: white;
+    font-size: 200px;
+    text-shadow:
+       10px  10px 0 black,  
+       5px  10px 0 black,  
+       5px  2px 0 black,  
+       5px  10px 0 black;  
+}
+
+
+/*Sinopse*/
+
+
+#sinopse {
+    display: flex;
+    justify-content: center; 
+    padding: 60px 20px;
+    background-image: url(images/Background2.jpg);
+    background-size: cover;
+}
+
+
+.sinopse-content {
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-sizing: border-box;
+    border: 2px solid black;
+}
+
+#sinopse h2{
+    font-size: 2em;
+}
+
+#sinopse p{
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+
+/*Protagonista*/
+
+#protagonista{
+    padding: 10px 0px;
+    background-image: url(images/bacgkround-personagem.jfif);
+    background-size: cover;
+}
+
+.protagonista-content {
+    display: flex;
+    justify-content: space-evenly; 
+    align-items: center;            
+    flex-wrap: wrap;                
+    gap: 2rem;
+  }
+
+.protagonista-img {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+.protagonista-img-1,
+.protagonista-img-2{
+    border: 2px solid black;
+}
+
+.protagonista-img-1{
+    background-image: url(images/Protagonista-antes.jpg);
+    background-size: auto;
+}
+
+.protagonista-img-2{
+    background-image: url(images/Protaginista-depois.jpg);
+}
+
+.protagonista-img-1,
+.protagonista-img-2
+{
+    width: 686px;
+  height: 476px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.protagonista-text{
+    background-color: white;
+    padding: 100px 50px;
+    border-radius: 5px;
+    text-align: center;
+    border: 2px solid black;
+}
+
+.protagonista-text p{
+    width: 500px;
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+.protagonista-text h2{
+    font-size: 2em;
+}
+
+
+/*Onde Assistir*/
+
+
+#onde-assistir{
+    background-image: url(images/bg3.jpeg);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.assistir-content{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 1600px;
+    background-color: white;
+    border-radius: 5%;
+    height: 96%;
+    border: 2px solid black;
+}
+
+.assistir-text{
+    width: 500px;
+}
+
+.assistir-text h2{
+    font-size: 2em;
+}
+
+.assistir-img{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.img-crunchyroll img{
+    border: 1px solid orange;
+}
+
+.img-crunchyroll img, 
+.img-prime_video img{
+    transition: transform 1s ease; 
+    width: 700px;
+}
+
+.img-crunchyroll img:hover, 
+.img-prime_video img:hover {
+    transform: scale(1.1);
+}
+
+
+/*Episódios e Temporadas*/
+
+#episodios_temporadas{
+    background-image: url(images/bg4.png);
+    background-size: cover;
+    padding: 10px 0px;
+}
+
+.episodios-content{
+    display: flex;
+    justify-content: space-evenly; 
+    align-items: center;            
+    flex-wrap: wrap;                
+    gap: 2rem;
+}
+
+.episodios-text{
+    background-color: white;
+    padding: 100px 50px;
+    border-radius: 5px;
+    border: 2px solid black;
+    width: 38%;
+}
+
+.episodios-text p{
+    width: auto;
+    font-size: 16px;
+    margin-top: 15px;
+    align-items: center;
+}
+
+.episodios-text h2{
+    font-size: 1.5em;
+}
+
+.episodios-img{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.episodios-img img{
+    width: 670px;
+    height: 460px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    border: 2px solid black;
+}
+
+
+
+/*Estúdio e Criadores*/
+
+#estudio_criadores{
+    background-image: url(images/bg5.jpg);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.criadores-content{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 1400px;
+    background-color: white;
+    border-radius: 5%;
+    height: 90%;
+    border: 2px solid black;
+    margin: auto;
+}
+
+.criadores-text{
+    width: 500px;
+}
+
+.criadores-text h2{
+    font-size: 2em;
+}
+
+.criadores-img{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.criadores-img1 img, 
+.criadores-img2 img{
+    width: 420px;
+    height: 360px;
+}
+
+/*Footer*/
+footer{
+    background-color: #fff;
+    padding: 2vh 0;
+    text-align: center;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.footer-link {
+    display: inline-flex;      
+    align-items: center;       
+    gap: 0.5rem;               
+    text-decoration: none;     
+    color: inherit;            
+    font-size: 1rem;           
+    transition: transform 1s ease; 
+  }
+  
+  .footer-link ion-icon {
+    font-size: 1.5rem;        
+    vertical-align: middle;    
+  }
+
+  .footer-link:hover{
+    transform: scale(1.1);
+  }
+  
+
+
+
+/*Responsividade*/
+
+@media (max-width: 1024px) {
+    .apresentacao{
+        display: none;
+    }
+
+    #cabecalho {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px 5%;
+        display: flex;
+        flex-direction: row;
+    }
+
+
+    .cabecalho-img img {
+        max-width: 140px;
+        margin-bottom: 15px;
+    }
+
+    #menu-toggle {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .cabecalho-textos ul {
+        display: none; /* Esconde o menu por padrão */
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .cabecalho-textos ul.ativo {
+        display: flex; /* Mostra o menu quando ativo */
+    }
+
+    .cabecalho-textos a {
+        font-size: 18px;
+    }
+
+    /* Seções ajustadas para telas menores */
+    #sinopse, .protagonista-content {
+        margin: 20px 10px;
+        padding: 20px 15px;
+    }
+
+    .sinopse-content,
+    .protagonista-text {
+        width: 90%;
+        padding: 30px 20px;
+    }
+
+    #sinopse p{
+        font-size: 12px;
+    }
+
+    .protagonista-img {
+        flex-direction:row;
+        gap: 0;
+      }
+
+    .protagonista-img-1,
+    .protagonista-img-2 {
+        width: 180px;
+        height: 180px;
+        margin-bottom: 20px;
+        border: 3px solid black;
+    }
+
+    .protagonista-text p {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .assistir-content{
+        display: block;
+        width: 90%;
+        height: 88%;
+        padding: 30px 20px;
+        font-size: 12px;
+    }
+
+    .assistir-text{
+        width: 100%;
+    }
+
+    .assistir-img{
+        flex-direction: row;
+    }
+
+    .assistir-img img{
+        width: 158px;
+        height: 100px;
+    }
+
+
+    .episodios-content{
+        display: block;
+        margin: auto;
+        width: 96%;
+        height: auto;
+        padding: 30px 20px;
+        font-size: 12px;
+    }
+
+    .episodios-text{
+        width: 100%;
+    }
+
+    .episodios-text p{
+        font-size: 12px;
+    }
+
+    .episodios-text h1, h2{
+        font-size: 1em;
+    }
+
+    .episodios-img{
+        flex-direction:row;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .episodios-img img{
+        width: 190px;
+        height: 122px;
+    }
+
+    .criadores-content{
+        display: block;
+        margin: auto;
+        width: 96%;
+        height: auto;
+        padding: 30px 20px;
+        font-size: 12px;
+
+    }
+
+    .criadores-text{
+        width: 100%;
+    }
+    
+    .criadores-img{
+        display: none;
+    }
+
+    
+    .footer-content{
+        font-size: 10px;
+        gap: 10px;
+    }
+
+    .footer-content p{
+        width: 45%;
+    }
+
+    .footer-link{
+        font-size: 10px;
+    }
+
+
+
+}
