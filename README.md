@@ -2,8 +2,6 @@
 
 > Fanpage responsiva de _Solo Leveling_ construída com HTML5, CSS3 e JavaScript puro.
 
-![Capa](assets/preview.png)
-
 ---
 
 ## 🎯 Sobre o Projeto
