@@ -24,6 +24,3 @@ Desenvolvida para praticar fundamentos de front-end (HTML semântico, CSS avanç
 - **JavaScript (Vanilla)** – smooth scroll, menu hambúrguer e expansão do header
 - **Ionicons** – ícones vetoriais
 
----
-
-## 📂 Estrutura
